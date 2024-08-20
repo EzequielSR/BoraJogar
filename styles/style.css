@@ -3,3 +3,153 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #1b2838;
+    color: #c7d5e0;
+  }
+  
+  .navbar {
+    background-color: #171a21 !important;
+  }
+  
+  .card {
+    background-color: #2a475e;
+    border: none;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    color: #66c0f4;:root {
+      --main-bg-color: #1a2c38;
+      --sidebar-color: #0f1923;
+      --accent-color: #31c4be;
+      --text-color: #ffffff;
+    }
+  
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--main-bg-color);
+      color: var(--text-color);
+    }
+  
+    .container {
+      display: flex;
+    }
+  
+    .sidebar {
+      width: 60px;
+      background-color: var(--sidebar-color);
+      height: 100vh;
+      position: fixed;
+    }
+  
+    main {
+      margin-left: 60px;
+      padding: 20px;
+      width: calc(100% - 60px);
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    header ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    header ul li {
+      margin-right: 20px;
+    }
+  
+    .search-bar {
+      display: flex;
+    }
+  
+    .search-bar input {
+      padding: 5px;
+      border-radius: 5px 0 0 5px;
+      border: none;
+    }
+  
+    .search-bar button {
+      padding: 5px 10px;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      background-color: var(--accent-color);
+    }
+  
+    .user-actions {
+      display: flex;
+      align-items: center;
+    }
+  
+    .user-actions .icon {
+      margin-right: 15px;
+    }
+  
+    .game-showcase {
+      display: flex;
+      margin-bottom: 20px;
+    }
+  
+    .game-thumbnails {
+      width: 15%;
+    }
+  
+    .game-banner {
+      width: 70%;
+      position: relative;
+    }
+  
+    .game-banner img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    .game-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+  
+    .similar-games {
+      width: 15%;
+    }
+  
+    .popular-games .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+    }
+  
+    /* Add more specific styling as needed */
+  }
+  
+  .card-text {
+    color: #acb2b8;
+  }
+  
+  .btn-primary {
+    background-color: #66c0f4;
+    border-color: #66c0f4;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1999ff;
+    border-color: #1999ff;
+  }
+  
+  footer {
+    background-color: #171a21 !important;
+  }
