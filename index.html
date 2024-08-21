@@ -15,7 +15,7 @@
   <body data-bs-theme="dark">
     <header class="py-3 mb-3 border-bottom">
       <div
-        class="container-fluid d-grid gap-3 align-items-center"
+        class="container d-grid gap-3 align-items-center"
         style="grid-template-columns: 1fr 2fr"
       >
         <ul
@@ -35,14 +35,9 @@
 
         <div class="d-flex align-items-center justify-content-around">
           <div class="search-bar">
-            <form class="d-flex align-items-center w-30 me-3" role="search">
-              <input
-                type="search"
-                class="form-control"
-                placeholder="Pesquisar..."
-                aria-label="Search"
-              />
-              <a href="#" class="ms-2">
+            <div class="input-group rounded">
+              <input type="search" class="form-control rounded" placeholder="Pesquisar..." aria-label="Search" aria-describedby="search-addon" />
+              <button class="btn btn-primary border-0 " id="search-addon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -55,57 +50,145 @@
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
                   />
                 </svg>
-              </a>
-            </form>
+              </button>
+            </div>
+           
           </div>
 
-          <div class="flex-shrink-0 dropdown">
-            <a
-              href="#"
-              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="https://github.com/mdo.png"
-                alt="mdo"
-                width="32"
-                height="32"
-                class="rounded-circle"
-              />
-            </a>
-            <ul class="dropdown-menu text-small shadow">
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-secondary me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-primary">Cadastre-se</button>
           </div>
         </div>
       </div>
     </header>
-    <main class="container mt-4">
-      <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Album example</h1>
-            <p class="lead text-body-secondary">
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don’t simply skip over it entirely.
-            </p>
-            <p>
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-            </p>
+    <main>
+      <section>
+        
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/img-7.jpeg" class="d-block mx-lg-auto img-fluid rounded" alt="Games Themes" width="550" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Descubra, jogue e compartilhe</h1>
+              <p class="lead">Com milhares de títulos à sua disposição, sua próxima aventura gamer está a apenas um clique de distância.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explorar Jogos</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Comunidade</button>
+              </div>
+            </div>
           </div>
         </div>
+        
       </section>
-
-      <h1 class="mb-4">Jogos</h1>
-      <div class="row" id="featured-games">
-        <!-- Aqui os jogos serão adicionados e apareceram dinâmicamente.-->
-      </div>
+      <section>
+        
+        <div class="container">
+          <div class="row" id="special-offers">
+            <h2 class="mt-5 mb-4">Promoção</h2>
+          <div class="col-md-3 mb-4">
+            <div class="card h-100">
+              <img src="images/img-5.jpeg" alt="" class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Game 1</h5>
+                <p class="card-text">An exciting adventure game</p>
+                <div class="mt-auto">
+                  <p class="text-muted"><s>$24.99</s></p>
+                  <p class="text-muted"><strong>$19.99</strong></p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+        
+            </div>
+        
+        
+          </div>
+        
+          <div class="col-md-3 mb-4">
+            <div class="card h-100">
+              <img src="images/img-6.jpeg" alt="" class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Game 1</h5>
+                <p class="card-text">An exciting adventure game</p>
+                <div class="mt-auto">
+                  <p class="text-muted"><s>$34.99</s></p>
+                  <p class="text-muted"><strong>$29.99</strong></p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <div class="row" id="games">
+          <h1 class="mb-4">Jogos</h1>
+          <div class="col-md-3 mb-4">
+            <div class="card h-100">
+              <img src="images/img-1.jpeg" alt="" class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Game 1</h5>
+                <p class="card-text">An exciting adventure game</p>
+                <div class="mt-auto">
+                  <p class="text-muted"><strong>$29.99</strong></p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+        
+            </div>
+        
+        
+          </div>
+        
+            <div class="col-md-3 mb-4">
+              <div class="card h-100">
+                <img src="images/img-2.jpeg" alt="" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Game 1</h5>
+                  <p class="card-text">An exciting adventure game</p>
+                  <div class="mt-auto">
+                    <p class="text-muted"><strong>$29.99</strong></p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card h-100">
+                <img src="images/img-3.jpeg" alt="" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Game 1</h5>
+                  <p class="card-text">An exciting adventure game</p>
+                  <div class="mt-auto">
+                    <p class="text-muted"><strong>$29.99</strong></p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card h-100">
+                <img src="images/img-4.jpeg" alt="" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Game 1</h5>
+                  <p class="card-text">An exciting adventure game</p>
+                  <div class="mt-auto">
+                    <p class="text-muted"><strong>$29.99</strong></p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        </di>
+        
+        
+      </section>
     </main>
     <footer class="py-4 mt-5">
       <div class="container">
