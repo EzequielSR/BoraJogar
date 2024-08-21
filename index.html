@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BoraJogar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -13,53 +16,45 @@
     />
   </head>
   <body data-bs-theme="dark">
-    <header class="py-3 mb-3 border-bottom">
-      <div
-        class="container d-grid gap-3 align-items-center"
-        style="grid-template-columns: 1fr 2fr"
-      >
-        <ul
-          class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-        >
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Loja</a></li>
-          <li>
-            <a href="#" class="nav-link px-2 link-body-emphasis">Jogos novos</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-2 link-body-emphasis">Notícias</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-2 link-body-emphasis">Comunidade</a>
-          </li>
-        </ul>
-
-        <div class="d-flex align-items-center justify-content-around">
-          <div class="search-bar">
-            <div class="input-group rounded">
-              <input type="search" class="form-control rounded" placeholder="Pesquisar..." aria-label="Search" aria-describedby="search-addon" />
-              <button class="btn btn-primary border-0 " id="search-addon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-              </button>
-            </div>
-           
-          </div>
-
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-secondary me-2">
-              Login
+    <!-- Header do projeto -->
+    <header class="p-3 position-sticky top-0 z-3" style="background-color: rgba(14, 13, 13, 0.734);">
+      <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-white">Início</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Jogos</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Comunidade</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-auto" role="search">
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Pesquisar..." aria-label="Search" aria-describedby="search-addon" />
+            <button class="btn btn-primary border-0 " id="search-addon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
             </button>
-            <button type="button" class="btn btn-primary">Cadastre-se</button>
+          </div>
+        </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Login</button>
+            <button type="button" class="btn btn-primary">Cadastrar</button>
           </div>
         </div>
       </div>
@@ -93,12 +88,12 @@
             <div class="card h-100">
               <img src="images/img-5.jpeg" alt="" class="card-img-top">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Game 1</h5>
-                <p class="card-text">An exciting adventure game</p>
+                <h5 class="card-title">Phantom Warriors</h5>
+                <p class="card-text">Tático e sombrio. Domine a escuridão.</p>
                 <div class="mt-auto">
                   <p class="text-muted"><s>$24.99</s></p>
                   <p class="text-muted"><strong>$19.99</strong></p>
-                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                  <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
         
@@ -111,12 +106,12 @@
             <div class="card h-100">
               <img src="images/img-6.jpeg" alt="" class="card-img-top">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Game 1</h5>
-                <p class="card-text">An exciting adventure game</p>
+                <h5 class="card-title">Genesis Heroes</h5>
+                <p class="card-text">Heróis icônicos. Salve o multiverso.</p>
                 <div class="mt-auto">
                   <p class="text-muted"><s>$34.99</s></p>
                   <p class="text-muted"><strong>$29.99</strong></p>
-                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                  <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
               </div>
         
@@ -129,11 +124,11 @@
             <div class="card h-100">
               <img src="images/img-1.jpeg" alt="" class="card-img-top">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Game 1</h5>
-                <p class="card-text">An exciting adventure game</p>
+                <h5 class="card-title">The Last Heir</h5>
+                <p class="card-text">Reivindique o trono perdido.</p>
                 <div class="mt-auto">
-                  <p class="text-muted"><strong>$29.99</strong></p>
-                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                  <p class="text-muted"><strong>Free</strong></p>
+                  <a href="#" class="btn btn-primary">Jogar</a>
                 </div>
               </div>
         
@@ -146,11 +141,11 @@
               <div class="card h-100">
                 <img src="images/img-2.jpeg" alt="" class="card-img-top">
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Game 1</h5>
-                  <p class="card-text">An exciting adventure game</p>
+                  <h5 class="card-title">Stellar Inventor</h5>
+                  <p class="card-text">Invente e construa seu avatar espacial.</p>
                   <div class="mt-auto">
-                    <p class="text-muted"><strong>$29.99</strong></p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <p class="text-muted"><strong>Free</strong></p>
+                    <a href="#" class="btn btn-primary">Jogar</a>
                   </div>
                 </div>
         
@@ -160,11 +155,11 @@
               <div class="card h-100">
                 <img src="images/img-3.jpeg" alt="" class="card-img-top">
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Game 1</h5>
-                  <p class="card-text">An exciting adventure game</p>
+                  <h5 class="card-title">Outlaw Odyssey</h5>
+                  <p class="card-text">Justiça mundial em suas mãos.</p>
                   <div class="mt-auto">
-                    <p class="text-muted"><strong>$29.99</strong></p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <p class="text-muted"><strong>Free</strong></p>
+                    <a href="#" class="btn btn-primary">Jogar</a>
                   </div>
                 </div>
         
@@ -174,11 +169,12 @@
               <div class="card h-100">
                 <img src="images/img-4.jpeg" alt="" class="card-img-top">
                 <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Game 1</h5>
-                  <p class="card-text">An exciting adventure game</p>
+                  <h5 class="card-title">Revolt Squad</h5>
+                  <p class="card-text">Revolução contra a tirania.</p>
                   <div class="mt-auto">
-                    <p class="text-muted"><strong>$29.99</strong></p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <p class="text-muted"><s>R$12.99</s></p>
+                    <p class="text-muted"><strong>Free</strong></p>
+                    <a href="#" class="btn btn-primary">Jogar</a>
                   </div>
                 </div>
         
@@ -190,115 +186,23 @@
         
       </section>
     </main>
-    <footer class="py-4 mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="d-block mb-2"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <title>Product</title>
-              <circle cx="12" cy="12" r="10"></circle>
-              <path
-                d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
-              ></path>
-            </svg>
-            <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
-            <small>
-              <p>
-                BoraJogar é a sua plataforma de jogos definitiva, oferecendo uma
-                ampla variedade de jogos e uma comunidade vibrante.
-              </p></small
-            >
-          </div>
-
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Resource name</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Resource</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Another resource</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Final resource</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Business</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Education</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Government</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Gaming</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a class="link-secondary text-decoration-none" href="#">Team</a>
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Locations</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Privacy</a
-                >
-              </li>
-              <li>
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Terms</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    <div class="container-fluid p-1">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-0 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <p>BoraJogar</p>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', Arial,Helvetica,sans-serif;
 }
 
 body {
   background-color: #1b2838;
   color: #c7d5e0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -58,6 +58,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    background-color: white;
   }
 
   header ul {
