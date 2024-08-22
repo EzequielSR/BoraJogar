@@ -1,0 +1,47 @@
+@media (min-width:1200px) {
+    button.navbar-toggler{
+        display: none;
+    }
+    form{
+        width: 20%;
+        margin: auto;
+    }
+}
+
+@media (max-width:1200px) {
+    header ul.nav{
+        display: none;
+    }
+    button.navbar-toggler{
+        display: block;
+        margin: auto;
+    }
+    form{
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media (max-width:768px) {
+    
+   header ul.nav{
+        display: none;
+    }
+    button.navbar-toggler{
+        display: block;
+    }
+    form{
+        width: 50%;
+    }
+    
+}
+@media (max-width:480px) {
+   
+    header ul.nav{
+        display: none;
+    }
+    button.navbar-toggler{
+        display: block;
+    }
+    
+}
