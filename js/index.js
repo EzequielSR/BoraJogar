@@ -25,3 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
     overlaySideBar.classList.toggle('active');
   });
 });
+
+function scrollToPromotion() {
+  const promotionTitle = document.querySelector('.promotion-title');
+  
+  if (promotionTitle) {
+    const yOffset = -90; 
+    const y = promotionTitle.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+//  Função para rolar para o conteúdo da página
