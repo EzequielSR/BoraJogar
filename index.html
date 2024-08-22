@@ -22,11 +22,11 @@
     <header id="main-header">
       <div class="container-fluid">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-  
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 menu">
             <li><a href="#" class="nav-link px-2 text-white">Início</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Jogos</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Comunidade</a></li>
@@ -55,13 +55,54 @@
         </form>
   
           <div class="text-end btns-login">
-            <button type="button" class="btn btn-outline-light me-2">Login</button>
-            <button type="button" class="btn btn-primary">Cadastrar</button>
+            <button type="button" class="btn btn-outline-light me-2 btn-login">Login</button>
+            <button type="button" class="btn btn-primary btn-login">Cadastrar</button>
           </div>
         </div>
       </div>
     </header>
     <main>
+      <div class="flex-shrink-0 p-3 nav-side-bar" style="width: 280px;">
+          <a href="#" class="img-close-nav"><img src="images/icon-close.png" alt="close"></a>
+
+          
+          <ul class="list-unstyled ps-0 menu2">
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed btn-nav-menu"
+                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                Início
+              </button>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed btn-nav-menu"
+                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                Jogos
+              </button>
+    
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed btn-nav-menu"
+                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                Comunidade
+              </button>
+    
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed btn-nav-menu"
+                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                Sobre
+              </button>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed btn-nav-menu"
+                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                Contato
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="overlay"></div>
+        <div class="overlay"></div>
       <section>
         
         <div class="container col-xxl-8 px-4 py-5">
@@ -210,18 +251,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js">
-     window.addEventListener('scroll', function() {
-    const header = document.getElementById('main-header');
-    
-    if (window.scrollY > 0) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
-
-
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

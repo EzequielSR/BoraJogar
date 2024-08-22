@@ -1,47 +1,64 @@
 @media (min-width:1200px) {
-    button.navbar-toggler{
+    div.nav-side-bar {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    button.navbar-toggler {
         display: none;
     }
-    form{
+    form {
         width: 20%;
         margin: auto;
     }
 }
 
 @media (max-width:1200px) {
-    header ul.nav{
+    header ul.nav {
         display: none;
     }
-    button.navbar-toggler{
+    button.navbar-toggler {
         display: block;
         margin: auto;
     }
-    form{
+    form {
         width: 30%;
         margin: auto;
     }
 }
 
 @media (max-width:768px) {
-    
-   header ul.nav{
+    header ul.nav {
         display: none;
     }
-    button.navbar-toggler{
+    button.navbar-toggler {
         display: block;
+        margin-left: 1px;
     }
-    form{
+    button.btn-login{
+        margin-top: 10px;
+    }
+    form {
         width: 50%;
+        margin: auto;
     }
-    
 }
+
 @media (max-width:480px) {
-   
-    header ul.nav{
+    header ul.nav {
         display: none;
     }
-    button.navbar-toggler{
+    
+    button.navbar-toggler {
         display: block;
     }
-    
+    button.btn-login{
+        margin-top: 20px;
+    }
+}
+
+/* Classe que será adicionada para mostrar a nav-side-bar */
+div.nav-side-bar.show {
+    visibility: visible;
+    opacity: 1;
 }
