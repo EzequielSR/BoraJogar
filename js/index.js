@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerHeight = header.offsetHeight;
   const navSideBar = document.querySelector('.nav-side-bar');
   const overlaySideBar = document.querySelector('.overlay');
-  
+
   // Lógica de rolagem para o header
   window.addEventListener('scroll', function () {
     if (window.scrollY > headerHeight) {
@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function scrollToPromotion() {
   const promotionTitle = document.querySelector('.promotion-title');
-  
+
   if (promotionTitle) {
-    const yOffset = -90; 
+    const yOffset = -90;
     const y = promotionTitle.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: 'smooth' });

@@ -4,9 +4,11 @@
         opacity: 0;
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
+
     button.navbar-toggler {
         display: none;
     }
+
     form {
         width: 20%;
         margin: auto;
@@ -17,10 +19,12 @@
     header ul.nav {
         display: none;
     }
+
     button.navbar-toggler {
         display: block;
         margin: auto;
     }
+
     form {
         width: 30%;
         margin: auto;
@@ -31,13 +35,16 @@
     header ul.nav {
         display: none;
     }
+
     button.navbar-toggler {
         display: block;
         margin-left: 1px;
     }
-    button.btn-login{
+
+    button.btn-login {
         margin-top: 10px;
     }
+
     form {
         width: 50%;
         margin: auto;
@@ -48,11 +55,12 @@
     header ul.nav {
         display: none;
     }
-    
+
     button.navbar-toggler {
         display: block;
     }
-    button.btn-login{
+
+    button.btn-login {
         margin-top: 20px;
     }
 }
