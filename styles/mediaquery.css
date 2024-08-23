@@ -49,6 +49,10 @@
         width: 50%;
         margin: auto;
     }
+    .scrolled {
+        background-color: #0f1923d2;
+      }
+      
 }
 
 @media (max-width:480px) {
